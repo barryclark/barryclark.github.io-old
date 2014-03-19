@@ -3,10 +3,10 @@
 #
 
 # The name of your blog
-name: Site Name
+name: Barry Clark
 
 # A short bio or description
-description: Your Site Description
+description: Web Developer
 
 # A URL pointing to your avatar or profile pic
 # To use your Gravatar: (the one that GitHub uses for your profile pic)
@@ -16,15 +16,15 @@ description: Your Site Description
 avatar: http://www.gravatar.com/avatar/36b4f56a7fa40d3c06e5afc4ed0b82b5?s=200
 
 # Your disqus username, if you'd like blog commenting
-disqus: 
+disqus: barryclark
 
 # Your Google Analytics web tracking code (e.g. UA-2110908-2)
-google_analytics: 
+google_analytics: UA-2530088-4
 
 # Links used for your social icons
 links:
-  github: your-username
-  twitter: your-username
+  github: barryclark
+  twitter: baznyc
 
 markdown: rdiscount
 pygments: true
