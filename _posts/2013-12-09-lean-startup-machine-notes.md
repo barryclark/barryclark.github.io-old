@@ -73,5 +73,5 @@ With just 2 hours until the final deadline our team regrouped in a coffee shop t
  [2]: http://twitter.com/to
  [3]: http://customerdevlabs.com/2012/08/21/using-mturk-to-interview-100-customers-in-4-hours/
  [4]: http://www.slideshare.net/evanish/how-to-do-customer-development-interviews-to-validate-your-startup-idea
- [5]: http://barryclark.co/wp-content/uploads/2013/12/lean-team-shot.jpg
+ [5]: /images/lean-team-shot.jpg
  [6]: https://angel.co/fashion-metric
