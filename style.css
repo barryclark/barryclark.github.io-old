@@ -318,11 +318,14 @@ html {
   font-size: 100%; }
 
 body {
-  max-width: 680px;
-  margin: 0 auto;
   background: white;
   font: 18px/1.4 Helvetica, Arial, sans-serif;
   color: #333333; }
+
+.container {
+  margin: 0 auto;
+  max-width: 740px;
+  width: 100%; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -334,22 +337,15 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-weight: 400;
-  font-size: 35px; }
-  @media screen and (max-width: 520px) {
-    h1 {
-      font-size: 32px; } }
+  font-size: 32px; }
+  h1 a {
+    color: inherit; }
 
 h2 {
   font-size: 26px; }
-  @media screen and (max-width: 520px) {
-    h2 {
-      font-size: 24px; } }
 
 h3 {
   font-size: 22px; }
-  @media screen and (max-width: 520px) {
-    h3 {
-      font-size: 20px; } }
 
 h4 {
   font-size: 18px;
@@ -407,44 +403,70 @@ img {
   color: black;
   background: #eeeeee; }
 
+.wrapper-masthead {
+  margin-bottom: 40px; }
+
 .masthead {
-  margin: 20px 0 30px;
-  padding-bottom: 20px;
-  border-bottom: 1px dotted #aaaaaa; }
+  padding: 20px 0;
+  border-bottom: #777777 dotted 1px; }
+  @media screen and (max-width: 520px) {
+    .masthead {
+      text-align: center; } }
+  .masthead br {
+    visibility: none; }
 
 .avatar {
   float: left;
-  width: 35px;
-  margin-right: 10px;
-  border-radius: 5px; }
+  width: 70px;
+  height: 70px;
+  margin-right: 15px; }
+  @media screen and (max-width: 520px) {
+    .avatar {
+      float: none;
+      display: block;
+      margin: 0 auto; } }
+  .avatar img {
+    border-radius: 5px; }
 
 .site-name {
   float: left;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 28px;
   letter-spacing: 1px;
   text-decoration: none;
   cursor: pointer;
   color: #333333; }
   @media screen and (max-width: 520px) {
     .site-name {
-      font-size: 22px; } }
+      float: none;
+      display: block; } }
   .site-name:hover, .site-name:active {
     text-decoration: none; }
 
 .site-description {
   float: left;
-  font-size: 14px;
-  display: none; }
+  font-size: 16px;
+  margin: 0;
+  margin-top: -5px;
+  color: #333333; }
+  @media screen and (max-width: 520px) {
+    .site-description {
+      float: none;
+      display: block;
+      margin: 3px 0; } }
 
 nav {
   float: right;
+  margin-top: -25px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px; }
   @media screen and (max-width: 520px) {
     nav {
-      font-size: 18px; } }
+      float: none;
+      display: block;
+      margin-top: 15px;
+      font-size: 16px; } }
   nav a {
     margin-left: 25px;
     text-align: right;
@@ -455,12 +477,16 @@ nav {
       text-decoration: none;
       cursor: pointer;
       color: #333333; }
+    @media screen and (max-width: 520px) {
+      nav a {
+        margin: 0 10px; } }
 
 @media screen and (max-width: 520px) {
   .logo, nav {
     float: none;
     width: 100%;
     text-align: center; } }
+
 
 .posts > .post {
   padding-bottom: 2em;
@@ -474,5 +500,11 @@ nav {
   padding: 0.1em 1em;
   color: #666666; }
 
+.wrapper-footer {
+  margin-top: 50px;
+  background-color: #eeeeee;
+  border-top: 1px solid #dddddd; }
+
 footer {
-  padding: 20px 0; }
+  padding: 20px 0;
+  text-align: center; }
