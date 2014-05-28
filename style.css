@@ -334,6 +334,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0; }
+  @media screen and (max-width: 520px) {
+    h1, h2, h3, h4, h5, h6 {
+      line-height: 1.4; } }
 
 h1 {
   font-weight: 400;
@@ -342,16 +345,13 @@ h1 {
     color: inherit; }
 
 h2 {
-  font-size: 26px; }
-
-h3 {
   font-size: 22px; }
 
-h4 {
+h3 {
   font-size: 18px;
   font-weight: 600; }
 
-h5 {
+h4 {
   font-size: 18px;
   color: #666666;
   font-weight: 600; }
@@ -408,7 +408,7 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: #777777 dotted 1px; }
+  border-bottom: 1px solid #eeeeee; }
   @media screen and (max-width: 520px) {
     .masthead {
       text-align: center; } }
@@ -449,7 +449,7 @@ img {
   font-size: 16px;
   margin: 0;
   margin-top: -5px;
-  color: #333333; }
+  color: #777777; }
   @media screen and (max-width: 520px) {
     .site-description {
       float: none;
@@ -492,6 +492,15 @@ nav {
   padding-bottom: 2em;
   border-bottom: 1px solid #eeeeee; }
 
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none; }
+
+.post h1 {
+  cursor: pointer; }
+  .post h1:hover, .post h1:active {
+    color: #4183c4;
+    text-decoration: none; }
 .post blockquote {
   border-left: 2px solid #666666;
   font-size: 22px;
